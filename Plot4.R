@@ -33,7 +33,7 @@ str(filtered_data)
 
 #Open the device/graphics context
 
-##png(filename = "plot3.png")
+png(filename = "plot4.png")
 
 # Set the Grid layout
 par(mfcol= c(2,2))
@@ -65,5 +65,13 @@ legend("topright",
 plot(filtered_data$Time, filtered_data$Voltage, 
      xlab="datetime", ylab="Voltage", type="l")
 
+
+############
+
+# Adding last chart
+plot(filtered_data$Time, filtered_data$Global_reactive_power, type="l",
+     xlab="datetime", ylab="Global_reactive_power")
+
+
 #Close the file
-##dev.off()
+dev.off()
