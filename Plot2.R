@@ -30,7 +30,7 @@ str(full_data)
 filtered_data <- full_data[full_data$Date=='2007-02-01'| full_data$Date=='2007-02-02',]
 
 # Now we have only 2880 rows/objects
-str(full_data)
+str(filtered_data)
 
 #Open the device/graphics context
 
